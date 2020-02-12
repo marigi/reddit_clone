@@ -3,13 +3,18 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
-//require("@rails/ujs").start()
-//= require jquery3
-//= require popper
-//= require bootstrap
-//require("turbolinks").start()
-//require("@rails/activestorage").start()
-//require("channels")
+require("@rails/ujs").start()
+require("turbolinks").start()
+require("@rails/activestorage").start()
+require("channels")
+
+import "bootstrap"
+import "../stylesheets/application"
+
+document.addEventListener("turbolinks:load", () => {
+    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="popover"]').popover()
+})
 
 
 
