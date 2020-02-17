@@ -36,21 +36,11 @@
     border-bottom: 1px solid #e9e9e9;
 
     .title {
+
       a {
         color: #FF4500;
       }
     }
-  }
-
-  .navbar-collapse {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
   }
 
   .comments_title {
